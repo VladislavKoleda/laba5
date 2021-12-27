@@ -25,6 +25,8 @@ public class Main {
         }
 
         Computer[] comp = new Computer[10];
+        for (int i = 0; i < 10; i++)
+            comp[i] = new Computer();
         int k = 0;
 
         while (Objects.equals(str, "y") && k < 10)
@@ -49,13 +51,15 @@ public class Main {
                 if (Objects.equals(str, "n"))
                 {
                     System.out.print("Завершение");
-                    System.exit(0);
+                    break;
                 }
                 System.out.print("Повторите ввод --- ");
                 str = in.nextLine();
             }
 
         }
+
+        System.out.println("\nHelper сработал " + HelperClass.isValidInteger(5));
 
     }
 
