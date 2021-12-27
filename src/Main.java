@@ -59,7 +59,7 @@ public class Main {
 
         }
 
-        System.out.println("\nHelper сработал " + HelperClass.isValidInteger(5));
+        System.out.println("\nHelper сработал. Ответ на запрос: " + HelperClass.isValidInteger(5));
 
     }
 

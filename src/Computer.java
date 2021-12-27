@@ -6,9 +6,19 @@ public class Computer {
         MotherBoard _board = new MotherBoard();
         VideoCard _video = new VideoCard();
         int fullPrice;
+        static int priceOfAllOrder = 0;
 
-    public Computer() {
+    public Computer()
+    {
         fullPrice = 0;
+    }
+
+    public Computer(int price)
+    {
+        fullPrice = price;
+        int[] arr = new int[10];
+        for (int i = 0; i < 10; i++)
+            arr[i] = i;
     }
 
     public int myPrice()
