@@ -13,10 +13,8 @@ public class Main {
 
         System.out.print("Начать сборку комплектующих? (y/n) --- ");
         str = in.nextLine();
-        while (!Objects.equals(str, "y"))
-        {
-            if (Objects.equals(str, "n"))
-            {
+        while (!Objects.equals(str, "y")) {
+            if (Objects.equals(str, "n")) {
                 System.out.println("Завершение");
                 System.exit(0);
             }
@@ -29,8 +27,7 @@ public class Main {
             comp[i] = new Computer();
         int k = 0;
 
-        while (Objects.equals(str, "y") && k < 10)
-        {
+        while (Objects.equals(str, "y") && k < 10) {
             comp[k].inputBoard(); //Ввод информации о плате
             comp[k].inputProc(); //Ввод информации о процессоре
             comp[k].inputRam(); //Ввод информации о озу
@@ -46,10 +43,8 @@ public class Main {
             System.out.print("Начать новую сборку? (y/n)");
             str = in.nextLine();
 
-            while (!Objects.equals(str, "y"))
-            {
-                if (Objects.equals(str, "n"))
-                {
+            while (!Objects.equals(str, "y")) {
+                if (Objects.equals(str, "n")) {
                     System.out.print("Завершение");
                     break;
                 }
@@ -62,12 +57,13 @@ public class Main {
         System.out.println("\nHelper сработал. Ответ на запрос: " + HelperClass.isValidInteger(5));
 
         Computer[][] compArr = new Computer[2][2];
-        for(int i = 0; i < 2; i++)
-            for(int j = 0; j < 2; j++) {
+        for (int i = 0; i < 2; i++)
+            for (int j = 0; j < 2; j++) {
                 compArr[i][j].inputBoard(); //Ввод информации о плате
                 compArr[i][j].inputProc(); //Ввод информации о процессоре
                 compArr[i][j].inputRam(); //Ввод информации о озу
                 compArr[i][j].inputMemory(); //Ввод информации о накопителе
                 compArr[i][j].inputVideo(); //Ввод информации о видеокарте
             }
+    }
 }

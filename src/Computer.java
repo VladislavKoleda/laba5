@@ -5,8 +5,8 @@ public class Computer {
         Memory _mem = new Memory();
         MotherBoard _board = new MotherBoard();
         VideoCard _video = new VideoCard();
-        int fullPrice;
         static int priceOfAllOrder = 0;
+        protected int fullPrice;
 
     public Computer()
     {
