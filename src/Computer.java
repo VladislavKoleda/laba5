@@ -66,4 +66,9 @@ public class Computer {
         return fullPrice;
     }
 
+    public int getDeliveryCost()
+    {
+        return fullPrice / 10;
+    }
+
 }

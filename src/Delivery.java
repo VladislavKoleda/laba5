@@ -17,9 +17,9 @@ public class Delivery extends Computer{
         deliveryCost = price;
     }
 
-    public int getDeliveryCost(int price)
+    public int getDeliveryCost()
     {
-        return deliveryCost;
+        return super.getDeliveryCost();
     }
 
     public String ToString()
